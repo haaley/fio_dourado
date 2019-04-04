@@ -1472,16 +1472,24 @@ width: 130%;}
 .entry-header{}
 h1.entry-title{font-size: 20px;
 margin: 0;
-text-transform: uppercase;}
+text-transform: uppercase;
+}
+small.entry-title{
+  font-size: 19px;
+  text-transform: none;
+  font-weight: 300;
+}
 .my-account-area {
   padding-bottom: 70px;
 }
-.form-fields{border-color: #e8e8e9 #e8e8e9 -moz-use-text-color;
-border-style: solid solid none;
-border-width: 1px 1px medium;
+.form-fields{
+border-color: #e8e8e9 #e8e8e9 -moz-use-text-color;
+border-style: solid solid solid;
+border-width: 1px 1px 1px;
 float: left;
 padding: 20px 25px;
-width: 100%;}
+width: 100%;
+margin: 15px;}
 .form-fields h2{border-bottom: 1px solid #e8e8e9;
 font-size: 18px;
 margin: 0 0 15px;
@@ -1496,11 +1504,19 @@ text-transform: uppercase;}
 }
 .form-fields p label span.required{}
 .form-fields p input{background: #fff none repeat scroll 0 0;
-border: 1px solid #e8e8e9;
+border: 1px solid #595d4e;
 border-radius: 0;
 height: 32px;
 width: 100%;
 padding: 0 0 0 10px;}
+.form-fields i{width: 20px;}
+.form-fields select{background: #fff none repeat scroll 0 0;
+  border: 1px solid #595d4e;
+  border-radius: 0;
+  height: 32px;
+  width: 100%;
+  padding: 0 0 0 10px;}
+ 
 .form-action{background: #f5f5f5 none repeat scroll 0 0;
 border-color: #e8e8e9 #e8e8e9;
 border-style: none solid solid;
@@ -1529,7 +1545,58 @@ margin: 0;}
   text-transform: uppercase;
   transition: all 0.3s ease 0s;
 }
+
 .form-action input[type="submit"]:hover{background:#a37832}
+
+.form-action2{background: #f5f5f5 none repeat scroll 0 0;
+  border-color: #e8e8e9 #e8e8e9;
+  
+  border-width:1px 1px 1px;
+  padding: 15px 10px;
+  float: right;
+  }
+
+.form-action2 a{
+  background: #353434 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #fff;
+  display: inline-block;
+  font-family: Montserrat,Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 40px;
+  text-shadow: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  margin-left: 15px;}
+.form-action2 input[type="submit"] {
+  background: #252525 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #fff;
+  display: inline-block;
+  font-family: Montserrat,Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 50px;
+  text-shadow: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  margin-left: 15px;
+}
+
+.form-action2 input[type="submit"]:hover{background:#4b5f0d}
+.form-action2 a:hover{background:#3c5dca}
+
+.form-action input[type="submit"]:hover{background:#EC4445}
+
 .form-action label{float: right;
 font-weight: normal;
 line-height: 36px;
@@ -1694,7 +1761,7 @@ width: 40px;}
 .table-content table td.product-name a:hover,.buttons-cart a:hover{color:#a37832}
 .buttons-cart{margin-bottom: 30px;
 overflow: hidden;}
-.buttons-cart input, .coupon input[type="submit"],.buttons-cart a,.coupon-info p.form-row input[type="submit"] {
+.buttons-cart input, .coupon button[type="submit"],.buttons-cart a,.coupon-info p.form-row input[type="submit"] {
   background: #252525 none repeat scroll 0 0;
   border: medium none;
   border-radius: 0;
@@ -1787,7 +1854,13 @@ a.shipping-calculator-button:hover{color:#83CBDC}
 text-transform: uppercase;
 white-space: nowrap;}
 .cart_totals table tr.order-total .amount{}
-.wc-proceed-to-checkout a{background: #a37832 none repeat scroll 0 0;
+
+.wc-proceed-to-checkout a{background: #a37832 none repeat scroll 0 0;}
+
+.wc-proceed-to-checkout{
+  float: right;}
+.wc-proceed-to-checkout a{background: #ec4445 none repeat scroll 0 0;
+
 color: #fff;
 display: inline-block;
 font-size: 14px;
@@ -1797,9 +1870,16 @@ line-height: 50px;
 margin-top: 20px;
 padding: 0 30px;
 text-transform: none;}
+
 .wc-proceed-to-checkout a:hover{background: #a37832;}
+
+
+.wc-proceed-to-checkout i{ width: 15px;}
+
+.wc-proceed-to-checkout a:hover{background: black;}
+
 /*=========================== 
-17. checkout page
+17. checkout p0age
 ============================= */
 .coupon-area{}
 .coupon-accordion{}

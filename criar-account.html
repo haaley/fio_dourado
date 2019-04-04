@@ -287,109 +287,166 @@
 		</div>
 		<!-- mobile-menu-area end -->
 	</header>
-	<!-- header end -->
 
+	<!-- header end -->
 	<!-- entry-header-area start -->
 	<div class="entry-header-area">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="entry-header">
-						<h1 class="entry-title">Carinho  
-							<small class="entry-title">clique em finalizar compra para efetuar o seu pedido.
-							</small>
-						</h1>
+						<h1 class="entry-title">crie uma conta caso ainda não possua cadastro</h1>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- entry-header-area end -->
-
-	<!-- cart-main-area start -->
-	<div class="cart-main-area">
+	<!-- my-account-area start -->
+	<div class="my-account-area">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="col-md-12">
 					<form action="#">
-						<div class="table-content table-responsive">
-							<table>
-								<thead>
-									<tr>
-										<!-- <th class="product-thumbnail">Image</th>  colspan="2"-->
-										<th class="product-thumbnail">Image</th>	
-										<th class="product-name " >PRODUTOS</th>
-										<th class="product-price">PREÇO</th>
-										<th class="product-quantity">QUANTIDADE</th>
-										<th class="product-subtotal">SUBTOTAL</th>
-										<th class="product-remove">REMOVER</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-
-										<td class="product-thumbnail"><a href="#"><img src="img/fla.jpg" alt="" /></a></td>
-										<td class="product-name"><a href="#">camisa preta</a></td>
-										<td class="product-price"><span class="amount">R$ 165.00</span></td>
-										<td class="product-quantity"><input type="number" value="1" /></td>
-										<td class="product-subtotal">R$ 165.00</td>
-										<td class="product-remove"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
-
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="row">
-							<div class="col-md-8 col-sm-7 col-xs-12">
-								<div class="buttons-cart">
-									<input type="submit" value="Atualizar carrinho" />
-									<a href="index.html">continuar comprando</a>
-								</div>
-								<div class="coupon">
-									<h3>Calcule o frete</h3>
-									<p>Digite seu código CEP</p>
-									<input type="text" placeholder="00000-000" />
-									<button type="submit"><i class="fa fa-truck" aria-hidden="true"> Calcular</i></button>
-								</div>
+						<div class="form-fields">
+							<h2><i class="fa fa-user" aria-hidden="true"></i> Sobre sua conta</h2>
+							<div class="col-md-6">
+								<p>
+									<label><i class="fa fa-envelope" aria-hidden="true"></i>E-mail<span class="required">*</span></label>
+									<input type="email" />
+								</p>
+								<p>
+									<label><i class="fa fa-lock" aria-hidden="true"></i>Crie uma senha<span class="required">*</span></label>
+									<input type="password" />
+								</p>
 							</div>
-							<div class="col-md-4 col-sm-5 col-xs-12">
-								<div class="cart_totals">
-									<h2>TOTAL CARINHO</h2>
-									<table>
-										<tbody>
-											<tr class="cart-subtotal">
-												<th>Subtotal</th>
-												<td><span class="amount">R$ 215.00</span></td>
-											</tr>
-											<tr class="cart-subtotal">
-												<th>Frete</th>
-												<td> <span class="amount">R$ 21.90</span></td>
-
-											</tr>
-											<tr class="order-total">
-												<th>Total</th>
-												<td>
-													<strong><span class="amount">RS 236.90</span></strong>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								</div>
+							<div class="col-md-6">
+								<p>
+									<label>Confirmar e-mail<span class="required">*</span></label>
+									<input type="email" />
+								</p>
+								<p>
+									<label>Confirmar senha<span class="required">*</span></label>
+									<input type="password" />
+								</p>
 							</div>
-							<div class="col-md-12 col-sm-12 col-xs-12">
-									<div class="wc-proceed-to-checkout">
-										<a href="#"><i class="fa fa-shopping-cart"></i> Finalizar compra</a>
-									</div>
 						</div>
+						<div class="form-fields">
+							<div class="col-md-6">
+								<h2><i class="fa fa-list" aria-hidden="true"></i> Dados Pessoais</h2>
+								<p>
+									<label>Nome<span class="required">*</span></label>
+									<input type="text" />
+								</p>
+								<p>
+									<label>Sobrenome<span class="required">*</span></label>
+									<input type="text" />
+								</p>
+								<p>
+									<label>CPF<span class="required">*</span></label>
+									<input type="text" />
+								</p>
+								<p>
+									<label>Telefone<span class="required">*</span></label>
+									<input type="text" />
+								</p>
+								<p>
+									<label>Outro telefone<span class="required">*</span></label>
+									<input type="text" />
+								</p>
+								<p>
+									<label>Sexo<span class="required">*</span></label>
+									<select type="text">
+										<option value="" selected="selected"> - Selecione - </option>
+										<option value="m">Masculino</option>
+										<option value="f">Feminino</option>
+										<option value="o">Outro</option>
+									</select>
+								</p>
+								<p>
+									<label>Data de nascimento<span class="required">*</span></label>
+									<input type="date" />
+								</p>
+							</div>
+							<div class="col-md-6">
+								<h2><i class="fa fa-map-marker" aria-hidden="true"></i> Endereço</h2>
+								<p>
+									<label>CEP<span class="required">*</span></label>
+									<input type="text" />
+								</p>
+								<p>
+									<label>Nome da rua<span class="required">*</span></label>
+									<input type="text" />
+								</p>
+								<p>
+									<label>Número<span class="required">*</span></label>
+									<input type="text" />
+								</p>
+								<p>
+									<label>Complemento</label>
+									<input type="text" />
+								</p>
+								<p>
+									<label>Ponto de referência</label>
+									<input type="text" />
+								</p>
+								<p>
+									<label>Bairro<span class="required">*</span></label>
+									<input type="text" />
+								</p>
+								<p>
+									<label>Cidade<span class="required">*</span></label>
+									<input type="text" />
+								</p>
+								<p>
+									<label>Estado<span class="required">*</span></label>
+									<select type="text">
+										<option value="" selected="selected"> - Selecione - </option>
+										<option value="AC">Acre</option>
+										<option value="AL">Alagoas</option>
+										<option value="AP">Amapá</option>
+										<option value="AM">Amazonas</option>
+										<option value="BA">Bahia</option>
+										<option value="CE">Ceará</option>
+										<option value="DF">Distrito Federal</option>
+										<option value="ES">Espírito Santo</option>
+										<option value="GO">Goiás</option>
+										<option value="MA">Maranhão</option>
+										<option value="MT">Mato Grosso</option>
+										<option value="MS">Mato Grosso do Sul</option>
+										<option value="MG">Minas Gerais</option>
+										<option value="PA">Pará</option>
+										<option value="PB">Paraíba</option>
+										<option value="PR">Paraná</option>
+										<option value="PE">Pernambuco</option>
+										<option value="PI">Piauí</option>
+										<option value="RJ">Rio de Janeiro</option>
+										<option value="RN">Rio Grande do Norte</option>
+										<option value="RS">Rio Grande do Sul</option>
+										<option value="RO">Rondônia</option>
+										<option value="RR">Roraima</option>
+										<option value="SC">Santa Catarina</option>
+										<option value="SP">São Paulo</option>
+										<option value="SE">Sergipe</option>
+										<option value="TO">Tocantins</option>
+									</select>
+								</p>
+							</div>
+						</div>
+						
+							<div class="form-action2">
+								<a href="#">cancelar</a>
+								<input type="submit" value="Criar Conta"/>
+							</div>
+						
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- cart-main-area end -->
-
+	<!-- my-account-area end -->
 	<!-- footer start -->
+		<!-- footer start -->
 	<footer>
 		<!-- footer-top-area start -->
 		<div class="footer-top-area">
