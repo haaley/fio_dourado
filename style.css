@@ -1482,6 +1482,7 @@ small.entry-title{
 .my-account-area {
   padding-bottom: 70px;
 }
+
 .form-fields{
 border-color: #e8e8e9 #e8e8e9 -moz-use-text-color;
 border-style: solid solid solid;
@@ -1490,7 +1491,8 @@ float: left;
 padding: 20px 25px;
 width: 100%;
 margin: 15px;}
-.form-fields h2{border-bottom: 1px solid #e8e8e9;
+
+  .form-fields h2{border-bottom: 1px solid #e8e8e9;
 font-size: 18px;
 margin: 0 0 15px;
 padding: 0 0 5px;
@@ -1516,6 +1518,43 @@ padding: 0 0 0 10px;}
   height: 32px;
   width: 100%;
   padding: 0 0 0 10px;}
+
+
+  .form-fields1{
+    border-color: #e8e8e9 #e8e8e9 -moz-use-text-color;
+    border-style: solid solid solid;
+    border-width: 1px 1px 1px;
+    float: left;
+    padding: 20px 25px;
+    width: 100%;
+    }
+    
+    .form-fields1 h2{border-bottom: 1px solid #e8e8e9;
+    font-size: 18px;
+    margin: 0 0 15px;
+    padding: 0 0 5px;
+    text-transform: uppercase;}
+    .form-fields1 p{}
+    .form-fields1 p label {
+      display: block;
+      font-family: Montserrat,Arial,Helvetica,sans-serif;
+      font-weight: 400;
+      margin: 0 0 5px;
+    }
+    .form-fields1 p label span.required{}
+    .form-fields1 p input{background: #fff none repeat scroll 0 0;
+    border: 1px solid #595d4e;
+    border-radius: 0;
+    height: 32px;
+    width: 100%;
+    padding: 0 0 0 10px;}
+    .form-fields1 i{width: 20px;}
+    .form-fields1 select{background: #fff none repeat scroll 0 0;
+      border: 1px solid #595d4e;
+      border-radius: 0;
+      height: 32px;
+      width: 100%;
+      padding: 0 0 0 10px;}
  
 .form-action{background: #f5f5f5 none repeat scroll 0 0;
 border-color: #e8e8e9 #e8e8e9;
@@ -1527,6 +1566,7 @@ width: 100%;}
 .form-action p.lost_password{float: left;
 line-height: 36px;
 margin: 0;}
+
 .form-action input[type="submit"] {
   background: #252525 none repeat scroll 0 0;
   border: medium none;
@@ -1595,7 +1635,7 @@ margin: 0;}
 .form-action2 input[type="submit"]:hover{background:#4b5f0d}
 .form-action2 a:hover{background:#3c5dca}
 
-.form-action input[type="submit"]:hover{background:#EC4445}
+.form-action input[type="submit"]:hover{background:#a37832}
 
 .form-action label{float: right;
 font-weight: normal;
@@ -1647,7 +1687,7 @@ top: 2px;}
   font-weight: 700;
 }
 .wishlist-table table .wishlist-in-stock {
-  color: #a37832;
+  color: blue;
 }
 .wishlist-table table .product-add-to-cart > a {
   background: #000 none repeat scroll 0 0;
@@ -2080,7 +2120,7 @@ top: -2px;}
 }
 .order-button-payment{}
 .order-button-payment input {
-  background: #a37832 none repeat scroll 0 0;
+  background: black none repeat scroll 0 0;
   border: medium none;
   color: #fff;
   font-size: 17px;
@@ -2127,10 +2167,10 @@ text-transform: uppercase;}
   float: none;
   margin-top: 10px;
 }
-.single-product-info .short-description {
+.single-product-info .short-deion {
   margin-top: 10px;
 }
-.single-product-info .short-description > p {
+.single-product-info .short-deion > p {
   font-size: 13px;
   line-height: 22px;
 }
@@ -2616,4 +2656,54 @@ color: #fff;}
 }
 .mobile-menu {
   display: none;
+}
+.form-action1 input[type="submit"]:hover{background:#a37832}
+.form-action1 input[type="submit"] {
+  background: #252525 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #fff;
+  display: inline-block;
+  float: right;
+  font-family: Montserrat,Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  height: 50px;
+  line-height: 40px;
+  padding: 0 15px;
+  text-shadow: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.zoom {
+	overflow: hidden;
+}
+
+.zoom img {
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.text-item {
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	bottom: 20px;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 700;
+	text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
